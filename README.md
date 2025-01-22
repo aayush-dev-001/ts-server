@@ -186,4 +186,4 @@ Aayush Kumar
 
 ## Support
 
-For support, email support@your-domain.com or create an issue in the GitHub repository.
+For support, email aayush.ku9136@gmail.com or create an issue in the GitHub repository.

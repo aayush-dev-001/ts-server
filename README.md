@@ -26,8 +26,8 @@ A production-ready Node.js server built with TypeScript, featuring clustering, e
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/aayush-dev-001/ts-server.git
+cd ts-server
 ```
 
 2. Install dependencies:
@@ -45,8 +45,12 @@ cp .env.example .env
 4. Configure your `.env` file:
 
 ```env
-NODE_ENV=development
 PORT=3000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=ts_db
+NODE_ENV=development
 MAX_WORKERS=4
 API_VERSION=v1
 ```
@@ -136,12 +140,16 @@ Console output is enabled in development mode.
 
 ## Environment Variables
 
-| Variable    | Description               | Default     |
-| ----------- | ------------------------- | ----------- |
-| NODE_ENV    | Environment               | development |
-| PORT        | Server port               | 3000        |
-| MAX_WORKERS | Number of cluster workers | CPU cores   |
-| API_VERSION | API version               | v1          |
+| Variable    | Description                                 | Default         |
+| ----------- | ------------------------------------------- | --------------- |
+| PORT        | Server port                                 | 3000            |
+| DB_HOST     | Database host                               | localhost       |
+| DB_USER     | Database user                               | root            |
+| DB_PASSWORD | Database password                           |                 |
+| DB_NAME     | Database name                               | ts_db           |
+| NODE_ENV    | Environment (development, test, production) | development     |
+| MAX_WORKERS | Number of worker processes                  | 0 (auto-detect) |
+| API_VERSION | API version                                 | v1              |
 
 ## Security
 
@@ -172,10 +180,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Your Name
+Aayush Kumar
 
-- Website: [your-website.com](https://your-website.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@aayush-dev-001](https://github.com/aayush-dev-001)
 
 ## Support
 
